@@ -1,20 +1,29 @@
 ul { list-style: none; }
 header a { text-decoration: none; color: white; }
-html, body {padding:0; margin:0}
+html, body {
+  padding:0;
+  margin:0;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: Proxima Nova;
+}
 .header {
   width: 100%;
   height: 120px;
   background: #363f48;
-  font-family: Proxima Nova;
   font-size: 14px;
 }
 .headWrap {
-  width: 1332px;
+  position: relative;
+  left: 142px;
+  width: 940px;
   height: 100%;
-  margin: 0 auto;
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  /*width: 1332px;*/
+  /*margin: 0 auto;*/
 }
 .logo {
   width: 174px;
@@ -23,70 +32,70 @@ html, body {padding:0; margin:0}
   font-family: HelveticaNeue LT;
   font-size: 30px;
   outline: 2px solid white;
-  margin: auto 133px auto 142px;
   line-height: 56px;
   text-align: center;
+  /*margin: auto 133px auto 142px;*/
 }
 .topMenu {
-  margin: auto 0;
+  margin: 0 auto;
 }
 .header ul {
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  flex-flow: row nowrap;
 }
 header ul li {
   padding-right: 30px;
 }
 .topMenu ul li a:hover {
   background: #fff;
-  color: green;
+  color: black;
 }
 .login {
+  margin-left: auto;
   color: #8e97a0;
-  margin: auto 0 auto 45px;
+  padding-right: 33px;
 }
 .signUp {
-  margin: auto 0 auto 45px;
-  background: url(images/signUp.png);
-  background-repeat: no-repeat;
   width: 86px;
   height: 33px;
+  background: url(images/signUp.png) no-repeat;
+  /*margin: auto 0 auto 45px;*/
 }
 .textWrap {
   text-align: center;
   line-height: 33px;
 }
-.main {
-  width: 100%;
-  height: 1950px;
+section a {
+  color: #2cc76a;
 }
-.left a {
-  text-decoration: none; color: #2cc76a;
-}
-.mainWrap {
-  width: 1332px;
+main {
+  position: relative;
+  left: 142px;
+  width: 940px;
   height: 100%;
-  margin: 0 auto;
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  flex-flow: row nowrap;
   align-items: baseline;
+  /*width: 1332px;*/
 }
-.left {
-  margin-left: 142px;
+section {
   width: 699px;
   overflow-wrap: break-word;
+  margin-right: auto;
+}
+aside {
+  margin-left: auto;
+  padding-left: 18px;
+  width: 240px;
+  font-size: 16px;
 }
 h1 {
   margin-top: 42px;
   margin-bottom: 0px;
-  font-family: Proxima Nova;
   font-size: 30px;
 }
 p {
   margin-top: 0px;
-  font-family: Proxima Nova;
   font-size: 16px;
   color: #767676;
 }
@@ -95,13 +104,10 @@ p {
   height: 293px;
   margin-bottom: 23px;
 }
-p.mainText {
-  margin-top: 0px;
-  margin-bottom: 40px;
-
+article {
+  color: #767676;
 }
 .comment {
-  font-family: Proxima Nova;
   font-size: 22px;
   font-weight: bold;
 }
@@ -119,7 +125,6 @@ input[type="text"] {
   height: 42px;
   color: #8c8c8c;
   font-size: 16px;
-  font-family: Proxima Nova;
 }
 .messageForm {
   margin-top: 15px;
@@ -129,7 +134,6 @@ input[type="text"] {
   height: 115px;
   color: #8c8c8c;
   font-size: 16px;
-  font-family: Proxima Nova;
   resize: none;
 }
 #submitComment {
@@ -141,7 +145,7 @@ input[type="text"] {
   text-family: HelveticaNeue;
   font-size: 20px;
   margin-top: 13px;
-  margin-left: 459px;
+
 }
 .commentData1 {
   margin-top: 40px;
@@ -177,70 +181,68 @@ input[type="text"] {
   margin-top: 15px;
 }
 .commentInfo {
-  font-family: Proxima Nova;
   font-weight: lighter;
   font-size: 14px;
   margin-top: 18px;
 }
-.right {
-  margin-left: 18px;
-  width: 222px;
-  font-family: Proxima Nova;
-  font-size: 16px;
-}
 .name {
   margin-top: 42px;
   margin-bottom: 25px;
-  font-family: Proxima Nova;
   font-size: 22px;
   color: black;
 }
-.right ul {
+aside ul {
   padding-left: 0px;
   display: flex;
   flex-flow: column nowrap;
 }
-.right li {
+aside li {
   padding-bottom: 7px;
 }
-.right a {
+aside a {
   text-decoration: none;
   color: #767676;
 }
-.footer {
+footer {
   width: 100%;
   height: 297px;
   background: #262e34;
-  font-family: Proxima Nova;
   font-size: 14px;
 }
 .footerWrap {
-  width: 1332px;
+  position: relative;
+  left: 142px;
+  width: 940px;
   height: 100%;
-  margin: 0 auto;
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  /*margin: 0 auto;*/
+  /*width: 1332px;*/
+  /*margin: 0 auto;*/
 }
 .footer ul {
-  padding-left: 0px;
+
 }
 .contacts {
-  margin-left: 142px;
-  margin-right: 196px;
-  margin-top: 68px;
+
 }
 .h {
   color: #68737b;
   padding-bottom: 20px;
+  font-size: 14px;
 }
-.h1 {
-  padding-bottom: 20px;
+h3 {
+  margin-top: 68px;
+  margin-bottom: 20px;
+  font-weight: normal;
 }
 .c {
   color: white;
-  display: flex;
-  flex-flow: column nowrap;
+  padding: 0;
+
 }
 .c li {
   padding-bottom: 12px;
@@ -251,11 +253,12 @@ input[type="text"] {
 }
 .footerTable {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
+
 .chat {
   width: 138px;
   height: 33px;
@@ -264,12 +267,14 @@ input[type="text"] {
   line-height: 33px;
 }
 .copyright {
-  margin-left: 142px;
-  margin-right: 196px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: baseline;
   color: white;
+  width: 100%;
+  margin-bottom: 52px;
+
 }
 .flathost {
   width: 89px;
