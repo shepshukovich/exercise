@@ -15,15 +15,12 @@ html, body {
 }
 .headWrap {
   position: relative;
-  left: 142px;
   width: 940px;
   height: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  margin: 0 auto;
   align-items: center;
-  /*width: 1332px;*/
-  /*margin: 0 auto;*/
 }
 .logo {
   width: 174px;
@@ -34,14 +31,11 @@ html, body {
   outline: 2px solid white;
   line-height: 56px;
   text-align: center;
-  /*margin: auto 133px auto 142px;*/
-}
-.topMenu {
-  margin: 0 auto;
 }
 .header ul {
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
 }
 header ul li {
   padding-right: 30px;
@@ -53,38 +47,34 @@ header ul li {
 .login {
   margin-left: auto;
   color: #8e97a0;
-  padding-right: 33px;
-}
-.signUp {
-  width: 86px;
-  height: 33px;
-  background: url(images/signUp.png) no-repeat;
-  /*margin: auto 0 auto 45px;*/
+  padding-right: 16px;
+  padding-left: 15px;
 }
 .textWrap {
+  width: 86px;
+  height: 33px;
   text-align: center;
   line-height: 33px;
-}
-section a {
-  color: #2cc76a;
+  background: url(images/signUp.png) no-repeat;
 }
 main {
   position: relative;
-  left: 142px;
   width: 940px;
   height: 100%;
   display: flex;
   flex-flow: row nowrap;
+  margin: 0 auto;
   align-items: baseline;
-  /*width: 1332px;*/
 }
 section {
   width: 699px;
   overflow-wrap: break-word;
-  margin-right: auto;
+
+}
+section a {
+  color: #2cc76a;
 }
 aside {
-  margin-left: auto;
   padding-left: 18px;
   width: 240px;
   font-size: 16px;
@@ -211,13 +201,12 @@ footer {
 }
 .footerWrap {
   position: relative;
-  left: 142px;
+
   width: 940px;
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  margin: 0 auto;
 
   /*margin: 0 auto;*/
   /*width: 1332px;*/
@@ -280,4 +269,31 @@ h3 {
   width: 89px;
   height: 27px;
   background: url(images/flathost.png) no-repeat;
+}
+
+@media all and (max-width: 1040px) {
+  .headWrap {
+    left: 0px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  aside {
+    margin: 0 auto;
+  }
+  .footerWrap {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .footerTable {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
 }
