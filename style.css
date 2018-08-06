@@ -201,16 +201,11 @@ footer {
 }
 .footerWrap {
   position: relative;
-
   width: 940px;
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
   margin: 0 auto;
-
-  /*margin: 0 auto;*/
-  /*width: 1332px;*/
-  /*margin: 0 auto;*/
 }
 .footer ul {
 
@@ -242,12 +237,12 @@ h3 {
 }
 .footerTable {
   display: flex;
+  flex-flow: column wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
   width: 100%;
 }
-
 .chat {
   width: 138px;
   height: 33px;
@@ -287,13 +282,13 @@ h3 {
   aside {
     margin: 0 auto;
   }
-  .footerWrap {
+  /* .footerWrap {
     display: flex;
     flex-flow: column nowrap;
   }
   .footerTable {
     display: flex;
-    flex-flow: column nowrap;
-  }
+    flex-flow: row wrap;
+  } */
 
 }
